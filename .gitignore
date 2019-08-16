@@ -1,0 +1,17 @@
+**/logs
+**/java-gen
+
+**/.idea
+**/.svn
+**/target
+**/.settings
+**/.project
+**/.classpath
+**/.factorypath
+**/.metadata
+**/.apt_generated
+
+**/*.iml
+**/*.tmp
+
+/*/.gitignore
