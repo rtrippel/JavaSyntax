@@ -1,27 +1,26 @@
-package lambdas.example_one;
+package lambdas.with_generic;
 
 public class Car {
-
     private String brand;
-    private int date;
+    private  int age;
 
-    Car(String brand, int age) {
+    public Car(String brand, int age) {
         this.brand = brand;
-        this.date = age;
+        this.age = age;
     }
 
     public String getBrand() {
         return brand;
     }
-
-    public int getDate() {
-        return date;
+    public int getAge() {
+        return age;
     }
 
     @Override
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
