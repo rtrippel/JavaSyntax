@@ -17,8 +17,6 @@ public class Example {
 
         printDetails(list.get(0), x -> x.getBrand());
         printDetails(list.get(0), x -> x.getAge());
-
-
     }
 
     private static void printDetails(Car car, GetInformation information) {
