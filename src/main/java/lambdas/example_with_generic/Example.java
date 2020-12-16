@@ -1,4 +1,4 @@
-package lambdas.with_generic;
+package lambdas.example_with_generic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,6 +14,7 @@ public class Example {
         for(Car car : list) {
             printDetails(car, x -> Objects.equals(x.getBrand(),"BMW") ? x : x.getBrand());
         }
+        list.forEach(car -> printDetails(car, x -> Objects.equals(x.getBrand(),"BMW") ? x : x.getBrand()));
 
         printDetails(list.get(0), x -> x.getBrand());
         printDetails(list.get(0), x -> x.getAge());

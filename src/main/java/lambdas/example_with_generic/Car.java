@@ -1,4 +1,4 @@
-package lambdas.with_generic;
+package lambdas.example_with_generic;
 
 public class Car {
     private String brand;
