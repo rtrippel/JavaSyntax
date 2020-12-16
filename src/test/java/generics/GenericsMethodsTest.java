@@ -1,17 +1,15 @@
-package Generics;
+package generics;
 
 
 import org.junit.*;
 
 import java.io.*;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static Generics.GenericMethods.printStringOrInteger;
+import static generics.GenericMethods.printStringOrInteger;
 
 public class GenericsMethodsTest {
     private static GenericMethods.Util util;

@@ -1,4 +1,4 @@
-package Lambdas.ExampleOne;
+package lambdas.example_one;
 
 public class Car {
 

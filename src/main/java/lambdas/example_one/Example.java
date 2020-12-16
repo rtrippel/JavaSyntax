@@ -1,4 +1,4 @@
-package Lambdas.ExampleOne;
+package lambdas.example_one;
 
 import java.util.ArrayList;
 import java.util.Arrays;

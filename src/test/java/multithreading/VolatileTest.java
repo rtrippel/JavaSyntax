@@ -1,9 +1,8 @@
-package Multithreading;
+package multithreading;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.rules.Timeout;
 
 import java.io.*;
 import java.lang.reflect.Field;
