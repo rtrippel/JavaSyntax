@@ -2,6 +2,7 @@ package generics;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class GenericTypes {
@@ -14,9 +15,9 @@ public class GenericTypes {
 
         public static void main(String []args) {
             MyList<String> st = new MyList<>();
-            List<String> list = Arrays.asList("test");
+            List<String> list = Collections.singletonList("test");
             st.asMyList(list);
-            List<Dog> list1 = Arrays.asList(new Dog());
+            List<Dog> list1 = Collections.singletonList(new Dog());
             st.asMyList(list1);
         }
     }
