@@ -12,7 +12,7 @@ import java.util.Set;
 import static generics.GenericMethods.printStringOrInteger;
 
 public class GenericsMethodsTest {
-    private static GenericMethods.Util util;
+    private static GenericMethods.VariableUtil util;
     private static List<String> list;
     private static File file = new File(File.separator + "logFile.txt");
     private static PrintStream pw;

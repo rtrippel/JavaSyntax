@@ -45,10 +45,10 @@ public class Generics {
 
     }
     static void feed(List<Animal> list) {
-        list.forEach(x -> x.eat());
+        list.forEach(Animal::eat);
     } //метод кормить, который принимает на вход Список с Animal.
     static void feedAll(List<? extends Animal> list) { // принимаем на вход список Animal и наследников
-        list.forEach(x -> x.eat());
+        list.forEach(Animal::eat);
     } // принимает всех животных
 
     // List<? super Animal> - принимает на вход Энимал и его предков , в нашем случае Object

@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -41,6 +42,9 @@ public class ListExample {
         System.out.println(arrayList);
         System.out.println(arrayList.size());
         System.out.println(arrayList.contains("Petya"));
+
+
+        List<String> myLinkedList = new LinkedList<>();
 
 
     }
