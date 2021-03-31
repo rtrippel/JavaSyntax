@@ -1,4 +1,4 @@
-package collections;
+package collections.set;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -7,7 +7,7 @@ import java.util.TreeSet;
 /**
  * TreeSet основан на TreeMap:
  * Ключ - значение TreeSet
- * Значение - залушка
+ * Значение - заглушка
  *
  * Необходимо передать Компаратор в конструктор TreeSet.
  */
@@ -15,6 +15,7 @@ import java.util.TreeSet;
 public class TreeSetEG {
 
     public static void main(String[] args) {
+
         TreeSet<Integer> treeSet = new TreeSet<>();
 
         treeSet.addAll(Arrays.asList(5,3,4,6,11));
@@ -35,6 +36,12 @@ public class TreeSetEG {
         catSet.add(new Cat(21, "Старуся"));
 
         System.out.println(catSet);
+        TreeSet<Dog> dogSet = new TreeSet<>();
+        dogSet.add(new Dog(11, "Пуделяха"));
+        dogSet.add(new Dog(10, "Рэм"));
+        dogSet.add(new Dog(11, "Пуделяха"));
+
+        System.out.println(dogSet);
 
 
     }
@@ -51,6 +58,11 @@ public class TreeSetEG {
         public int getAge() {
             return age;
         }
+
+        public String getName() {
+            return name;
+        }
+
         public void setAge(int age) {
             this.age = age;
         }
@@ -63,7 +75,23 @@ public class TreeSetEG {
                     '}';
         }
 
+    }
 
+    static class Dog extends Cat implements Comparable<Dog>{
+
+        public Dog(int age, String name) {
+            super(age, name);
+        }
+
+        @Override
+        public int compareTo(Dog o) {
+            return Integer.compare(this.getAge(), o.getAge());
+        }
+//
+//        @Override
+//        public int compareTo(Dog o) {
+//            return 1;
+//        }
     }
 
 

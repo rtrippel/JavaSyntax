@@ -1,8 +1,6 @@
-package collections;
+package collections.list;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  Основной реализацией интерфейса List является ArrayList & LinkedList
@@ -22,6 +20,9 @@ import java.util.List;
 public class ListExample {
 
     public static void main(String[] args) {
+
+        List<String> df = new Stack<>();
+
         List<String> arrayList = new ArrayList<>();
         arrayList.add("Вася");
         arrayList.add("Petya");
@@ -45,6 +46,13 @@ public class ListExample {
 
 
         List<String> myLinkedList = new LinkedList<>();
+
+        List<String> myVector = new Vector<>();
+        myVector.add("Вася");
+        myVector.add("Петя");
+        myVector.add("Вова");
+
+        System.out.println(myVector);
 
 
     }
